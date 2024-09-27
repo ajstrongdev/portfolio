@@ -8,8 +8,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        "accent-purple": "#8d7be4",
+      },
+      backgroundImage: {
+        'site-pattern': "url('/blobs.png')",
       },
     },
   },
