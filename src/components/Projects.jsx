@@ -10,7 +10,7 @@ function Projects() {
                 <div key={index} className="md:w-[85%] mb-8 m-auto bg-white rounded-lg shadow-xl p-8">
                     <div>
                         <h3 className="text-xl font-bold">{item.Date}</h3>
-                        <h1 className="text-accent-purple text-6xl font-bold">{item.Title}</h1>
+                        <h1 className="text-accent-purple lg:text-6xl md:text-5xl text-4xl break-words font-bold">{item.Title}</h1>
                         <h3 className="text-xl text-accent-purple">{item.Descriptor}</h3>
                         {item.Information.map((item, index) => (
                             <p key="index" className="text-xl pt-4">{item}</p>
