@@ -2,26 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f3ff;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+@font-face {
+  font-family: "Source Sans 3";
+  font-weight: 400;
+  src: url("SourceSans3-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  font-weight: 500;
+  src: url("SourceSans3-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  font-weight: 300;
+  src: url("SourceSans3-Light.ttf");
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  font-weight: 700;
+  src: url("SourceSans3-Bold.ttf");
+}
+
+p, h1, h2, h3, h4, h5, h6, a {
+  font-family: "Source Sans 3", sans-serif !important;
 }
