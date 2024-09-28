@@ -7,7 +7,7 @@ function Projects() {
     return(
         <div className="w-full md:w-[85%] my-16 p-8 m-auto leading-normal">
             {MyProjects.map((item, index) => (
-                <div key={index} className="md:w-[85%] m-auto md:grid md:grid-cols-2 md:gap-8">
+                <div key={index} className="md:w-[85%] pt-8 m-auto">
                     <div>
                         <h3 className="text-xl font-bold">{item.Date}</h3>
                         <h1 className="text-accent-purple text-6xl font-bold">{item.Title}</h1>
@@ -29,14 +29,16 @@ function Projects() {
                             ))}
                         </p>
                         <div className="flex justify-left gap-8 my-4">
-                        {item.Website !== null && item.Website !== undefined && item.Website !== "" && (
-                            /* Only display website button if the Website property is not null, undefined, or an empty string */
-                            <Link href={item.Website} className="border border-solid border-black border-2 hover:scale-105 transition-all text-xl px-4 py-2">Website</Link>
-                        )}
-                            <Link href={item.Repo} className="border border-solid border-black border-2 hover:scale-105 transition-all text-xl px-4 py-2">GitHub Repository</Link>
+                            {item.Website !== null && item.Website !== undefined && item.Website !== "" && (
+                                /* Only display website button if the Website property is not null, undefined, or an empty string */
+                                <Link href={item.Website} className="border border-solid border-black border-2 hover:scale-105 transition-all text-xl px-4 py-2">Website</Link>
+                            )}
+                            {item.Repo !== null && item.Repo !== undefined && item.Repo !== "" && (
+                                <Link href={item.Repo} className="border border-solid border-black border-2 hover:scale-105 transition-all text-xl px-4 py-2">GitHub Repository</Link>
+                            )}
                         </div>
                     </div>
-                    <div>
+                    <div className="md:grid md:grid-cols-3 md:gap-4 md:justify-center items-center">
                         {item.Pictures.map((item, index) => (
                             <Image
                                 key={index}

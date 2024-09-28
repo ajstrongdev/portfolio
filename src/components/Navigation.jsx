@@ -10,24 +10,19 @@ const Items = [
         key: 1,
     },
     {
-        link: "/about",
-        goto: "About",
-        key: 2
-    },
-    {
         link: "/projects/",
         goto: "Projects",
-        key: 3,
+        key: 2,
     },
     {
-        link: "/journey/",
-        goto: "My Journey",
-        key: 4,
+        link: "/skills/",
+        goto: "Skills",
+        key: 3,
     },
     {
         link: "https://www.linkedin.com/in/adamsalt/",
         goto: "LinkedIn",
-        key: 5,
+        key: 4,
     },
     {
         link: "https://github.com/ajstrongdev",
