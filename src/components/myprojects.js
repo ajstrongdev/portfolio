@@ -76,7 +76,7 @@ const MyProjects = [
                 skill: "TailwindCSS"
             },
             {
-                skill: "MySQL"
+                skill: "SQL"
             },
             {
                 skill: "JavaScript"
@@ -149,6 +149,40 @@ const MyProjects = [
                 skill: "C#",
             }
         ],
+    },
+    {
+        Title: "Portfolio",
+        Date: "September 2024",
+        Descriptor: "Website",
+        Information: [
+            "You are currently on my portfolio website! I've been creating websites and projects since I started programming in 2017, and while only some of them have managed to make it in this section, all of them have taught me valuable skills that I still use to this day.",
+            "This website should hopefully serve as a great place for potential employers to see my professional works, and contact me easily."
+        ],
+        Pictures: [],
+        Repo: "https://github.com/ajstrongdev/portfolio",
+        Skills: [
+            {
+                skill: "HTML"
+            },
+            {
+                skill: "CSS"
+            },
+            {
+                skill: "JavaScript"
+            },
+            {
+                skill: "Next.JS"
+            },
+            {
+                skill: "React"
+            },
+            {
+                skill: "TailwindCSS"
+            },
+            {
+                skill: "Git"
+            }
+        ]
     }
 ]
 
