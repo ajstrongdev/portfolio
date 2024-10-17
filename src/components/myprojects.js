@@ -143,7 +143,7 @@ const MyProjects = [
             "/distro-3.webp",
             "/distro-1.webp"
         ],
-        Repo: null,
+        Repo: "https://github.com/ajstrongdev/distrocollection",
         Skills: [
             {
                 skill: "C#",
