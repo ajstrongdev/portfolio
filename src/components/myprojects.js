@@ -50,6 +50,70 @@ const MyProjects = [
         ],
     },
     {
+        Title: "Stockhive",
+        new: true,
+        Date: "December 2024",
+        Descriptor: "Web Application",
+        Information: [
+            "Stockhive is a web application created for my second year of University. The application is an inventory management system, designed to help a business keep track of their stock levels, make sales, and manage deliveries.",
+            "The application was created using the Laravel, which I learnt throughout the semester whilst working on this project. I decided to utilise TailwindCSS for the front-end of the application, as I find it to be a very efficient way to create beautiful websites.",
+            "This project was developed as part of a team, and we were also graded on our ability to work as a team. We adhered to agile development practices, such as Scrum, and we utilised Git for our version control."
+        ],
+        Pictures: [
+            "/stockhive-1.webp",
+            "/stockhive-2.webp",
+            "/stockhive-3.webp",
+        ],
+        Repo: "https://github.com/stockhive-uni/stockhiveapp",
+        Skills: [
+            {
+                skill: "PHP"
+            },
+            {
+                skill: "Laravel"
+            },
+            {
+                skill: "TailwindCSS"
+            },
+            {
+                skill: "SQL"
+            },
+            {
+                skill: "JavaScript"
+            },
+            {
+                skill: "Git",
+            }
+        ]
+    },
+    {
+        Title: "Win538",
+        new: true,
+        Date: "December 2024",
+        Descriptor: "WinForms Application",
+        Information: [ 
+            "I created this project as part of my second year of University. The project was created for my Systems Programming module. We were tasked with creating an application in C#, that incorporated advanced object-oriented programming concepts, such as: inheritance, polymorphism and encapsulation.",
+            "I decided to make a game for this project, as I wanted to work on something a bit more creative. Win538 is a turn based strategy game in which the player must win against the computer in an election. The player must be strategic in their decisions and aim to win as many states as possible."
+        ],
+        Pictures: [
+            "/win538-1.webp",
+            "/win538-2.webp",
+            "/win538-3.webp",
+        ],
+        Repo: "https://github.com/ajstrongdev/Win538",
+        Skills: [
+            {
+                skill: "C#",
+            },
+            {
+                skill: "WinForms",
+            },
+            {
+                skill: "Git",
+            },
+        ],
+    },
+    {
         Title: "Social App",
         Date: "March 2024",
         Descriptor: "Web Application",
@@ -98,11 +162,7 @@ const MyProjects = [
         Pictures: [ 
             "/cantor-1.webp",
             "/cantor-2.webp",
-            "/cantor-3.webp",
-            "/cantor-6.webp",
-            "/cantor-4.webp",
-            "/cantor-5.webp",
-            
+            "/cantor-3.webp", 
         ],
         Repo: "https://github.com/ajstrongdev/cantor-college",
         Skills: [
