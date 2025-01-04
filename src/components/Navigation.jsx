@@ -10,13 +10,13 @@ const Items = [
         key: 1,
     },
     {
-        link: "/projects/",
-        goto: "Projects",
+        link: "#skills",
+        goto: "Skills",
         key: 2,
     },
     {
-        link: "/skills/",
-        goto: "Skills",
+        link: "#projects",
+        goto: "Projects",
         key: 3,
     },
     {
@@ -49,27 +49,27 @@ function Navigation() {
         <div>
             <nav className="md:w-[85%] m-auto md:my-4 md:rounded-lg flex items-center justify-between">
                 <div className="p-4 text-xl">
-                    <Link href="../">By <span className="font-bold text-accent-purple">AJStrong</span>.</Link>
+                    <Link href="../" className="text-white">By <span className="font-bold text-accent-purple">AJStrong</span>.</Link>
                 </div>
-                <div className="px-4 text-center rounded-lg md:flex lg:gap-8 md:gap-4 hidden md:block">
+                <div className="px-4 text-center rounded-lg md:flex lg:gap-8 md:gap-4 hidden">
                         {Items.map((item) => (
-                            <p key={item.key}><Link href={item.link} className="text-xl hover:text-accent-purple transition-all">{item.goto}</Link></p>
+                            <p key={item.key}><Link href={item.link} className="text-xl text-white hover:text-accent-purple transition-all">{item.goto}</Link></p>
                         ))}
                 </div>
                 <div
                     className="p-2 px-4 cursor-pointer md:hidden"
                     onClick={() => MobileMenu('mega-menu')}
                 >
-                    <h1 className="text-3xl">≡</h1>
+                    <h1 className="text-3xl pt-2 text-white font-bold">≡</h1>
                 </div>
             </nav>
             <div className="hidden transition-all" id="mega-menu">
                 <div className="w-full m-auto">
-                    <div className="text-2xl bg-violet-100 p-8">
+                    <div className="text-2xl bg-opacity-10 bg-accent-purple rounded-lg m-4 p-8">
                         {Items.map((item) => (
                             <li className="list-none p-4" key={item.key}>
                                 <Link href={item.link}>
-                                    <span className="" onClick={(e) => e.stopPropagation()}>{item.goto}</span>
+                                    <span className="text-white" onClick={(e) => e.stopPropagation()}>{item.goto}</span>
                                 </Link>
                             </li>
                         ))}
