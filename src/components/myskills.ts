@@ -1,4 +1,10 @@
-const MySkills = [
+interface Skills {
+    skill: string;
+    description: string;
+    key: number;
+}
+
+const MySkills: Skills[] = [
     {
         skill: "Next.JS",
         description: "I am confident in my ability to write efficient JavaScript code. I utilise it to create user-interaction on my websites. I then later began to use JavaScript more heavily through React. I began to learn Next.JS, a React framework, during my summer break from University, by rewriting some of my older websites. I find React significantly more efficient for website development. React also has seamless integreation with TailwindCSS, which is why a lot of my websites usually utilise both.",

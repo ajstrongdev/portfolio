@@ -1,4 +1,16 @@
-const MyProjects = [
+interface Project {
+    Title: string;
+    Date: string;
+    Descriptor: string;
+    Information: string[];
+    Pictures: string[];
+    Website?: string;
+    Repo: string;
+    Skills: { skill: string }[];
+    new?: boolean;
+}
+
+const MyProjects: Project[] = [
     {
         Title: "Rhino Linux",
         Date: "October 2022 - Present",
