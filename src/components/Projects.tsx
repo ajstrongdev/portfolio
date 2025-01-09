@@ -48,10 +48,10 @@ function Projects() {
                         </div>
                     </div>
                     <div className="md:grid md:grid-cols-3 md:gap-4 md:justify-center items-center py-4">
-                        {item.Pictures.map((item, index) => (
+                        {item.Pictures.map((picture, index) => (
                             <Image
                                 key={index}
-                                src={item}
+                                src={picture}
                                 width={0}
                                 height={0}
                                 sizes="100vw"
