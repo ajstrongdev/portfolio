@@ -9,6 +9,8 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+import { ThemeProvider } from "@/components/theme-provider";
+import { ModeToggle } from "@/components/theme-toggle";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -46,6 +48,9 @@ function Menu() {
               LinkedIn
             </NavigationMenuLink>
           </NavigationMenuItem>
+          <NavigationMenuItem>
+            <ModeToggle />
+          </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
     </div>
@@ -58,12 +63,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Menu />
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Menu />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
