@@ -12,7 +12,6 @@ import {
 import { ThemeProvider } from "@/components/theme-provider";
 import { ModeToggle } from "@/components/theme-toggle";
 import Footer from "@/components/ui/footer";
-import { ExternalLink } from "lucide-react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
