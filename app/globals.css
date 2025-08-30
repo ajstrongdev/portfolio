@@ -3,19 +3,19 @@
 
 :root {
   --background: oklch(0.9699 0.0113 71.8999);
-  --foreground: oklch(0.4597 0.0629 289.5561);
+  --foreground: oklch(0.3463 0.0502 289.8342);
   --card: oklch(0.987 0.0107 76.6004);
-  --card-foreground: oklch(0.4597 0.0629 289.5561);
+  --card-foreground: oklch(0.3463 0.0502 289.8342);
   --popover: oklch(0.9389 0.0145 64.3381);
-  --popover-foreground: oklch(0.4597 0.0629 289.5561);
+  --popover-foreground: oklch(0.3463 0.0502 289.8342);
   --primary: oklch(0.6957 0.1058 23.0328);
   --primary-foreground: oklch(1 0 0);
   --secondary: oklch(0.9389 0.0145 64.3381);
-  --secondary-foreground: oklch(0.1344 0 0);
+  --secondary-foreground: oklch(0.3463 0.0502 289.8342);
   --muted: oklch(0.9702 0 0);
   --muted-foreground: oklch(0.4386 0 0);
   --accent: oklch(0.9502 0.0101 58.2141);
-  --accent-foreground: oklch(0.5768 0.0458 291.0006);
+  --accent-foreground: oklch(0.3463 0.0502 289.8342);
   --destructive: oklch(0.629 0.1902 23.0704);
   --destructive-foreground: oklch(1 0 0);
   --border: oklch(0.93 0.0094 286.2156);

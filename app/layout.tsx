@@ -11,6 +11,8 @@ import {
 } from "@/components/ui/navigation-menu";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ModeToggle } from "@/components/theme-toggle";
+import Footer from "@/components/ui/footer";
+import { ExternalLink } from "lucide-react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,12 +41,18 @@ function Menu() {
             <NavigationMenuLink href="/#projects">Projects</NavigationMenuLink>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuLink href="https://github.com/ajstrongdev">
+            <NavigationMenuLink
+              href="https://github.com/ajstrongdev"
+              target="_blank"
+            >
               GitHub
             </NavigationMenuLink>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuLink href="https://linkedin.com/in/adamsalt">
+            <NavigationMenuLink
+              href="https://linkedin.com/in/adamsalt"
+              target="_blank"
+            >
               LinkedIn
             </NavigationMenuLink>
           </NavigationMenuItem>
@@ -75,6 +83,7 @@ export default function RootLayout({
         >
           <Menu />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
