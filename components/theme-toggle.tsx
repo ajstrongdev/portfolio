@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 export function ModeToggle() {
-  const { setTheme, resolvedTheme } = useTheme();
+  const { setTheme, theme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -25,7 +25,7 @@ export function ModeToggle() {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="outline" size="icon">
-          {mounted ? resolvedTheme === "dark" ? <Moon /> : <Sun /> : <Sun />}
+          {mounted ? theme === "dark" ? <Moon /> : <Sun /> : <Sun />}
           <span className="sr-only">Toggle theme</span>
         </Button>
       </DropdownMenuTrigger>

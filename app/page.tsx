@@ -5,6 +5,9 @@ import Link from "next/link";
 import projects from "@/lib/projects.json";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { useEffect, useState } from "react";
+import { ExternalLink } from "lucide-react";
+import { GitHub } from "@/components/simpleicons";
 import {
   Card,
   CardHeader,
@@ -24,16 +27,23 @@ import { useTheme } from "next-themes";
 
 export default function Home() {
   const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  // Ensures theme is loaded.
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   return (
     <>
       <div className="h-screen w-full">
         <div className="flex items-center justify-center h-[calc(100vh-8rem)]">
           <div>
-            <h1 className="text-5xl font-bold text-center py-2 text-gray-700">
+            <h1 className="text-5xl font-bold text-center py-2">
               By{" "}
               <span
                 className={`bg-gradient-to-r from-chart-1 ${
-                  theme == "dark" ? "to-chart-2" : "to-chart-3"
+                  mounted && theme == "dark" ? "to-chart-2" : "to-chart-3"
                 } bg-clip-text text-transparent`}
               >
                 AJ
@@ -60,13 +70,13 @@ export default function Home() {
       </div>
       <div
         className={`w-full py-8 ${
-          theme === "dark" ? "bg-card/40" : "bg-card/70"
+          mounted && theme === "dark" ? "bg-card/40" : "bg-card/70"
         }`}
       >
         <div className="py-12" id="projects">
           <h1
             className={`text-5xl font-bold text-center bg-gradient-to-r from-chart-1 ${
-              theme == "dark" ? "to-chart-2" : "to-chart-3"
+              mounted && theme == "dark" ? "to-chart-2" : "to-chart-3"
             } text-transparent bg-clip-text leading-normal`}
           >
             My Projects
@@ -133,14 +143,14 @@ export default function Home() {
                     {project.Website && (
                       <Button asChild>
                         <Link href={project.Website} target="_blank">
-                          View Website
+                          <ExternalLink /> View Website
                         </Link>
                       </Button>
                     )}
                     {project.Repo && (
                       <Button asChild variant="secondary">
                         <Link href={project.Repo} target="_blank">
-                          GitHub Repository
+                          <GitHub /> GitHub Repository
                         </Link>
                       </Button>
                     )}
