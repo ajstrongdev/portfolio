@@ -20,21 +20,27 @@ import {
   CarouselPrevious,
   CarouselNext,
 } from "@/components/ui/carousel";
+import { useTheme } from "next-themes";
 
 export default function Home() {
+  const { theme } = useTheme();
   return (
     <>
       <div className="h-screen w-full">
         <div className="flex items-center justify-center h-[calc(100vh-8rem)]">
           <div>
-            <h1 className="text-5xl font-bold text-center py-2">
+            <h1 className="text-5xl font-bold text-center py-2 text-gray-700">
               By{" "}
-              <span className="bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
+              <span
+                className={`bg-gradient-to-r from-chart-1 ${
+                  theme == "dark" ? "to-chart-2" : "to-chart-3"
+                } bg-clip-text text-transparent`}
+              >
                 AJ
               </span>
               .
             </h1>
-            <p className="text-lg py-2">
+            <p className="text-lg py-2 text-center">
               Software Engineer, Open Source Advocate, Occasional Blog Writer.
             </p>
           </div>
@@ -52,9 +58,17 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full py-8 bg-card/40">
+      <div
+        className={`w-full py-8 ${
+          theme === "dark" ? "bg-card/40" : "bg-card/70"
+        }`}
+      >
         <div className="py-12" id="projects">
-          <h1 className="text-5xl font-bold text-center bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text leading-normal">
+          <h1
+            className={`text-5xl font-bold text-center bg-gradient-to-r from-chart-1 ${
+              theme == "dark" ? "to-chart-2" : "to-chart-3"
+            } text-transparent bg-clip-text leading-normal`}
+          >
             My Projects
           </h1>
         </div>
