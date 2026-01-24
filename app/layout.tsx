@@ -26,6 +26,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "By AJ.",
   description: "A collection of things I have made!",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 function Menu() {
