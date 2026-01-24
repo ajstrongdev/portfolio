@@ -40,7 +40,7 @@
       "Descriptor": "Web Application",
       "Information": [
         "democracyonline.io is a web game and full-stack application that I have been developing with the help of a small team of developers. The game allows for users to create a politician, run for political office and campaign to win elections. Users can also create or join political parties, and vote on various policies.",
-        "The application is built using TanStack Start and leverages TanStack Start's server functions to handle backend logic and data mutations. This project heavily utilises TypeScript and React, with Zod for schema validation. Drizzle is used as the ORM to interact with a PostgreSQL database, ensuring type-safe database operations. We use Terraform for infrastructure as code, allowing us o provision and manage our cloud resources efficiently within our codebase. Firebase Auth is integrated for user authentication."
+        "The application is built using TanStack Start and leverages TanStack Start's server functions to handle backend logic and data mutations. This project heavily utilises TypeScript and React, with Zod for schema validation. Drizzle is used as the ORM to interact with a PostgreSQL database, ensuring type-safe database operations. We use Terraform for infrastructure as code, allowing us to provision and manage our cloud resources efficiently within our codebase. Firebase Auth is integrated for user authentication."
       ],
       "new": true,
       "Pictures": [
