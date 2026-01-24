@@ -128,8 +128,9 @@ export default function Home() {
                             <Image
                               src={image}
                               alt={project.Title + " image " + index}
-                              width={700}
-                              height={500}
+                              width={1400}
+                              height={1000}
+                              quality={95}
                               className="object-contain rounded-2xl w-full max-h-[500px]"
                             />
                           </CarouselItem>

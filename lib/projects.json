@@ -3,7 +3,7 @@
     {
       "Title": "Rhino Linux",
       "Date": "October 2022 - Present",
-      "Descriptor": "Open source project",
+      "Descriptor": "Linux Distribution",
       "Information": [
         "I am the Desktop Lead, founder and website maintainer for Rhino Linux. Due to the nature of open source development, and having a small development team, I have had to work across multiple different roles since this projects creation.",
         "Rhino Linux has given me an incredible opportunity to lead the development of a product from the original idea until its completion. From finding other open source developers and building a team, to facilitating development towards new releases. Leading this open source project has both enhanced my technical skills and abilities, and has taught me a lot.",
@@ -35,11 +35,40 @@
       ]
     },
     {
+      "Title": "democracyonline.io",
+      "Date": "November 2025 - Present",
+      "Descriptor": "Web Application",
+      "Information": [
+        "democracyonline.io is a web game and full-stack application that I have been developing with the help of a small team of developers. The game allows for users to create a politician, run for political office and campaign to win elections. Users can also create or join political parties, and vote on various policies.",
+        "The application is built using TanStack Start and leverages TanStack Start's server functions to handle backend logic and data mutations. This project heavily utilises TypeScript and React, with Zod for schema validation. Drizzle is used as the ORM to interact with a PostgreSQL database, ensuring type-safe database operations. We use Terraform for infrastructure as code, allowing us o provision and manage our cloud resources efficiently within our codebase. Firebase Auth is integrated for user authentication."
+      ],
+      "new": true,
+      "Pictures": [
+        "/images/democracy/1.png",
+        "/images/democracy/2.png",
+        "/images/democracy/3.png",
+        "/images/democracy/4.png",
+        "/images/democracy/5.png"
+      ],
+      "Website": "https://democracyonline.io",
+      "Repo": "https://github.com/ajstrongdev/democracyonline.io",
+      "Skills": [
+        "TanStack Start",
+        "TypeScript",
+        "React",
+        "Zod",
+        "Drizzle",
+        "PostgreSQL",
+        "Terraform",
+        "Firebase Auth",
+        "Git"
+      ]
+    },
+    {
       "Title": "Gizmo Garage",
       "Date": "May 2025",
       "Descriptor": "Web Application",
-      "new": true,
-      "Information": ["Dummy text"],
+      "Information": ["Gizmo Garage is a 3D asset management system with version control, built using Autodesk Platform Services (APS). The application allowed for multiple users to collaborate on 3D assets, with features such as uploading, downloading, and versioning of 3D models, as well as inviting users to projects, managing permissions and viewing 3D models directly in the browser using the APS Viewer SDK.", "This project uses Next.js for the front-end, with an Express.js backend API service. We used Firebase for authentication and user management, and MySQL for storing metadata about the 3D assets and user information. The application integrates with Autodesk Platform Services to handle the storage and viewing of 3D models.", "This project was developed as part of a team, and we were also graded on our ability to work within the team. We adhered to agile development practices, such as Scrum, and we used Git for our version control."],
       "Pictures": [
         "/images/gizmo/gizmo-1.png",
         "/images/gizmo/gizmo-2.png",
@@ -55,7 +84,9 @@
         "React",
         "Express.JS",
         "Firebase",
-        "Git"
+        "Git",
+        "Autodesk Platform Services",
+        "Bucket Storage"
       ]
     },
     {
